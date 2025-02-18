@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <form>
+        Enter Name :<input type="text" placeholder="Enter Your Name"> <br> <br>
+        Enter Number :<input type="number" placeholder="Enter Your Number"> <br> <br>
+        Enter Email :<input type="email" placeholder="Enter Your Email"> <br> <br>
+        Enter Password :<input type="password" placeholder="Enter Your Password"> <br> <br>
+        Enter Date Of Birth :<input type="date"> <br> <br>
+        Choose File : <input type="file"> <br> <br>
+        Select A Color : <input type="color"> <br> <br>
+        Range : <input type="range"> <br> <br>
+        Gender : <input type="radio" name="a">Male
+                 <input type="radio" name="a">Female
+                 <input type="radio" name="a">Others <br> <br>
+        <input type="checkbox"> Terms&Conditions <br> <br>
+        <input type="submit">
+    </form> -->
+
+    <h2>User Registration Form</h2>
+
+    <form action="submit.php" method="POST">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="email" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"> <br>
+            Gender male<input type="checkbox">
+            Female <input type="checkbox">
+            others <input type="checkbox">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Account Details</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="password" required>
+        </fieldset> <br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
